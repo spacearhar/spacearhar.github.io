@@ -1,0 +1,65 @@
+#planet {
+	right: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+.planet {
+	background: url(../images/planet.png);
+	height: 330px;
+	width: 300px;
+	position: relative;
+	z-index: 1;
+}
+
+.satellite {
+	background: url(../images/satellite.png);
+	padding: 63px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	animation: linear 7s orbita infinite;
+}
+
+#ufo {
+	right: 20px;
+	top: 20px;
+	position: absolute;
+	background: url(../images/ufo.png);
+	height: 150px;
+	width: 150px;
+	z-index: 0;
+	animation: linear 20s ufo infinite;
+}
+
+@keyframes orbita {
+	0% {}
+	24% {
+		z-index: 0;
+	}
+	25% {
+		left: 300px;
+		z-index: 2;
+	}
+	50% {
+	}
+	74% {
+		z-index: 2;
+	}
+	75% {
+		left: -140px;
+		z-index: 0;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes ufo {
+	0% {}
+	50% {
+		right: 800px;
+	}
+	100% {
+	}
+}

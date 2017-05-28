@@ -1,0 +1,78 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: url(../images/space.jpg);
+	font: 14px/1.5 Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #FFFF00;
+	text-transform: uppercase;
+}
+
+a:hover {
+	border-bottom: 3px solid #9400D3;
+}
+
+#main_content {
+	opacity: 0.9;
+	width: 800px;
+	margin: auto;
+}
+
+.main {
+	width: 100%;
+}
+
+#header {
+	height: 100px;
+	margin-top: 150px;
+	background-color: #7B68EE;
+}
+
+#content {
+	height: 400px;
+	margin-top: 20px;
+	background-color: #1E90FF;
+}
+
+#map {
+	padding-top: 25px;
+}
+
+.map_ref {
+	list-style-type: none;
+	transform: none;
+	padding-right: 50px;
+	float: left;
+}
+
+#this { 
+	border-bottom: 3px solid #9400D3;
+}
+
+#secret {
+	font-size: 14px;
+}
+
+.paragraph {
+	font: italic bold 16px arial;
+	color: #E0FFFF;
+	padding: 30px 75px;
+}
+
+#footer {
+	height: 80px;
+	margin-top: 25px;
+	background-color: #00BFFF;
+}
+ 
+#paragraph {
+	font: italic 14px arial;
+	padding-top: 18px;
+	padding-left: 550px;
+}
