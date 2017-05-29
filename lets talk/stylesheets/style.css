@@ -1,0 +1,57 @@
+body {
+	font: 16px Arial, sans-serif;
+	color: #2F4F4F;
+}
+
+#wrapper {
+	height: 900px;
+	width: 800px;
+	margin: auto;
+	background: linear-gradient(45deg, #ED1C24, #FCEE21);
+}
+
+.content {
+	padding: 40px;
+}
+
+#animation {
+	position: absolute;
+	top: 170px;
+	left: 250px;
+	animation: linear 30s hello;
+}
+
+#anim {
+	font: italic bold 24px Verdana, sans-serif;
+	color: #00FF7F;
+}
+
+#tuk {
+	padding: 5px 5px;
+}
+
+.game {
+	padding: 50px 400px;
+}
+
+#win {
+	width: 500px;
+	margin-left: -80px;
+}
+
+#win_image {
+	background: url("../images/bird.png");
+	height: 170px;
+	width: 166px;
+	position: absolute;
+	top: 650px;
+	left: 580px;
+}
+
+@keyframes hello {
+	0% {}
+	50% {}
+	100%{
+		left: 800px;
+	}
+}
