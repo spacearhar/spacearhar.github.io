@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery base</title>
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	</head>
+
+	<style type="text/css">
+		.block {
+			width: 1200px;
+			height: 200px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+	</style>
+
+	<body>
+		<button id="addBlock">Нажимай несколько раз!</button>
+		<div id="blocks"></div>
+	</body>
+
+	<script type="text/javascript">
+
+		jQuery('#addBlock').click(function() {
+			var randName = GetNumber(1, 700);
+			jQuery('#blocks').prepend('<div class="block ' + randName + '"></div>');
+
+			jQuery('.' + randName).css("background", "#" + GetNumber(0, 9) + GetNumber(0, 9) + GetNumber(0, 9)
+				 + GetNumber(0, 9) + GetNumber(0, 9) + GetNumber(0, 9));
+		});
+
+		// Функция возврата случайных значений в диапазоне
+		function GetNumber(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+	</script>
+</html>
