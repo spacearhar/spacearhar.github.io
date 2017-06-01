@@ -1,0 +1,37 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	margin: 30px;
+}
+
+#nav li {
+	list-style: none;
+	float: left;
+	width: 140px;
+}
+
+li ul {
+	display: none;
+}
+
+#nav a {
+	text-decoration: none;
+	font-size: 14px;
+	font-family: arial;
+	color: #fff;
+	background: #444;
+	display: block;
+	margin: 3px;
+	padding: 10px;
+	text-align: center;
+
+	border-radius: 5px;
+}
+
+#nav a:hover {
+	background: #ccc;
+	color: #444;
+}
