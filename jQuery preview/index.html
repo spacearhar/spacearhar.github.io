@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery preview</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="thumb">
+				<div class="content">
+					<h2>item 1</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p1.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 2</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p6.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 3</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p3.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 4</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p4.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 5</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p5.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 6</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p2.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 7</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p7.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 8</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p8.jpg" class="img">
+				</div>
+			</div>
+			<div class="thumb">
+				<div class="content">
+					<h2>item 9</h2>
+					<p>
+						Lorem ipsum dolor sit amet...
+					</p>
+				</div>
+				<div class="wrapper">
+					<img src="images/p9.jpg" class="img">
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		jQuery(function() {
+			jQuery('.wrapper').hover(function(){
+				jQuery(this).children().stop().animate({marginTop: '100%', opacity: 0}, 600);
+			}, function(){
+				jQuery(this).children().stop().animate({marginTop: '0%', opacity: 1}, 600);
+			});
+		});
+	</script>
+</html>
